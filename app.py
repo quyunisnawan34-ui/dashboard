@@ -8,7 +8,7 @@ try:
     model = joblib.load('gym_experience_model.pkl')
     preprocessor = joblib.load('gym_preprocessor.pkl')
 except FileNotFoundError:
-    st.error("File model (.pkl) tidak ditemukan! Pastikan file sudah diunduh dari Colab ke folder VS Code Anda.")
+    st.error("File model (.pkl) tidak ditemukan")
     st.stop()
 
 # --- BAGIAN 2: ANTARMUKA (UI) ---
