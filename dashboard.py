@@ -7,15 +7,10 @@ st.set_page_config(page_title="Gym Member Dashboard", layout="wide")
 
 # Handle File Loading for Local VS Code vs Colab
 def load_data():
-    # 1. Coba path lokal (folder yang sama dengan script)
     local_path = 'gym_members_exercise_tracking.csv'
-    # 2. Coba path Colab
-    colab_path = '/content/gym_members_exercise_tracking.csv'
     
     if os.path.exists(local_path):
         return pd.read_csv(local_path)
-    elif os.path.exists(colab_path):
-        return pd.read_csv(colab_path)
     else:
         st.error(f"File CSV tidak ditemukan! Pastikan file '{local_path}' ada di folder yang sama dengan script ini.")
         st.info("Silakan upload file secara manual di bawah ini:")
