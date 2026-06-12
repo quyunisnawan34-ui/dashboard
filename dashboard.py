@@ -62,4 +62,3 @@ with c4:
     st.plotly_chart(fig_corr, use_container_width=True)
 
 st.markdown("--- ")
-st.info("Dashboard ini memberikan wawasan tentang demografi anggota gym dan hubungannya dengan tingkat pengalaman latihan.")
